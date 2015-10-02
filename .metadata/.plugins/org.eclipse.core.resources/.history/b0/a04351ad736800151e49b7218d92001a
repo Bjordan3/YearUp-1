@@ -1,11 +1,13 @@
 import java.io.IOException;
 import java.util.Scanner;
 public class Name {
-	private static Scanner s;
+	int m_iqPoints = -1;
+
 	public static void main(String args[]) throws IOException {
 
 		System.out.println("Hello and welcome, Please follow the directions.");
-		s = new Scanner(System.in);
+		// scanner that scans the next input
+		Scanner s = new Scanner(System.in);
 		// declares a data type string and leaves its value empty
 		String name = "";
 		// declares a data type int and makes it zero
@@ -52,6 +54,7 @@ public class Name {
 		System.out.println("Your tips are as follow. 10%: " + tenPercent
 				+ " 15% " + fifteenPercent + " and 20% " + twentyPercent + ".");
 
+
 	}
 	public static void Add() {
 		int a = 3;
@@ -65,6 +68,7 @@ public class Name {
 		int sum2 = c + d;
 		System.out.println(
 				"The sum is of " + c + " and " + d + " is " + sum2 + ".");
+
 	}
 	public static void String(String args[]) {
 		int e = 10;
@@ -99,5 +103,6 @@ public class Name {
 		double TwentyPercent = ((amt * .20) + amt);
 		return TwentyPercent;
 	}
+
 
 }
