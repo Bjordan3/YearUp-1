@@ -1,0 +1,41 @@
+
+public class Bank {
+public int accntid;
+public String accntName;
+public int customerID;
+private double amount = 0.0;
+	public static void main(String[] args) {
+		
+
+	}
+public Bank(int ID, String Name, int CID){
+	accntid = ID;
+	accntName = Name;
+	customerID =CID;
+}
+public int getAccntid() {
+	return accntid;
+}
+public void setAccntid(int accntid) {
+	this.accntid = accntid;
+}
+public String getAccntName() {
+	return accntName;
+}
+public void setAccntName(String accntName) {
+	this.accntName = accntName;
+}
+public int getCustomerID() {
+	return customerID;
+}
+public void setCustomerID(int customerID) {
+	this.customerID = customerID;
+}
+public double getAmount() {
+	return amount;
+}
+public void setAmount(double amount) {
+	this.amount = amount;
+}
+
+}

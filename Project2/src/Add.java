@@ -5,6 +5,7 @@ public class Add {
 				// and displays them
 				Add1();
 				Add1(10, 20);
+				Add2(10, 5, 2, 3);
 				// states a data type to store the values of the areas from the circle
 				// and rectangle methods
 				double AreaInMainMethodC = CalculateCircleArea(5);
@@ -27,6 +28,12 @@ public class Add {
 		int sum2 = c + d;
 		System.out.println(
 				"The sum is of " + c + " and " + d + " is " + sum2 + ".");
+	}
+	public static void Add2(int a, int b, int c, int d){
+		double total = a + b / c * d;
+		float divide = b / c;
+		double multiply = 2.5 * a;
+		System.out.println(total + " " + divide + " " + multiply);
 	}
 	public static void String(String args[]) {
 		int e = 10;

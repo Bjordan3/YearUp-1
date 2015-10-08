@@ -49,8 +49,8 @@ public class Name {
 		double twentyPercent = TwentyPercent(amt);
 		// Prints out the bill amounts with the 10 15 and 20 percent amounts
 		// added on
-		System.out.println("Your tips are as follow. 10%: " + tenPercent
-				+ " 15% " + fifteenPercent + " and 20% " + twentyPercent + ".");
+		System.out.format("Your tips are as follow 10 percent is "+ tenPercent
+				+ " 15 percent "+ fifteenPercent + " and 20 percent "+ twentyPercent + ".");
 
 	}
 	public static void Add() {
