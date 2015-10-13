@@ -1,29 +1,32 @@
 
+
 public class Person {
 	public String NName = null;
 	public String NPhoneNumber = null;
 	private String NAddress = null;
 	int NAge = -1;
 
-	public static void main(String[] args) {
-		Person Jacquawn = new Person("Jacquawn", "678-357-8435",
-				"987 Burns Drive Atlanta, Georgia 30310", 21);
-		System.out.println("This is " + Jacquawn.NName);
-		System.out.println("This is Jacquawns number " + Jacquawn.NPhoneNumber);
-		System.out.println("This is Jacquawns address " + Jacquawn.NAddress);
-		System.out.println("This is Jacquawns age " + Jacquawn.NAge);
-		Jacquawn.setNAddress("1058 Crestmont Lane");
-		System.out.println(Jacquawn.NAddress);
-		Jacquawn.setNAddress("987 Burns Drive ");
-		System.out.println(Jacquawn.NAddress);
-		System.out.println(Jacquawn.NName);
-		Jacquawn.setNName("Aaishah");
-		System.out.println(Jacquawn.NName);
-		Person Krash = new Person(2);
-		System.out.println(Krash.NAge);
-		
-		
-	}
+//	public static void main(String[] args) {
+//		Person Jacquawn = new Person("Jacquawn", "678-357-8435",
+//				"987 Burns Drive Atlanta, Georgia 30310", 21);
+//		System.out.println("This is " + Jacquawn.NName);
+//		System.out.println("This is Jacquawns number " + Jacquawn.NPhoneNumber);
+//		System.out.println("This is Jacquawns address " + Jacquawn.NAddress);
+//		System.out.println("This is Jacquawns age " + Jacquawn.NAge);
+//		Jacquawn.setNAddress("1058 Crestmont Lane");
+//		System.out.println(Jacquawn.NAddress);
+//		Jacquawn.setNAddress("987 Burns Drive ");
+//		System.out.println(Jacquawn.NAddress);
+//		System.out.println(Jacquawn.NName);
+//		Jacquawn.setNName("Aaishah");
+//		System.out.println(Jacquawn.NName);
+//		Person Krash = new Person(2);
+//		System.out.println(Krash.NAge);
+//		Krash.GrowsOlder();
+//		System.out.println(Krash.NAge);
+//		
+//		
+//	}
 	Person(String name) {
 		NName = name;
 	}
@@ -68,5 +71,9 @@ public class Person {
 	}
 	public void setNAge(int nAge) {
 		NAge = nAge;
+	}
+	void GrowsOlder(){
+		int currentAge = getNAge();
+		setNAge(currentAge +1);
 	}
 }

@@ -1,24 +1,23 @@
 import java.util.Scanner;
 
 public class TipCalculator {
-private static Scanner s;
+private static Scanner Brandon;
 	public static void main(String[] args) {
 		
-		
-		s = new Scanner(System.in);
+		Brandon = new Scanner(System.in);
 		// ask for a bill amount
 		System.out.println("What is bill amount?: ");
 		// declares the double amount
 		double amt;
 		// stores the next amount in the amt variable
-		amt = s.nextFloat();
+		amt = Brandon.nextFloat();
 		// calls all the methods to have the amt stored from the input into them
 		// and be executed
 		double tenPercent = TenPercent(amt);
 		double fifteenPercent = FifteenPercent(amt);
 		double twentyPercent = TwentyPercent(amt);
 		
-		System.out.format("Your tips are as follow 10 percent is "+ tenPercent
+		System.out.println ("Your tips are as follow 10 percent is "+ tenPercent
 				+ " 15 percent "+ fifteenPercent + " and 20 percent "+ twentyPercent + ".");
 	}
 	public static double TenPercent(double amt) {

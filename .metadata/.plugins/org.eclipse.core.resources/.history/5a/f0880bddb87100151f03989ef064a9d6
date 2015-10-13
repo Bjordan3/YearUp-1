@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class DayOfWeek {
+	
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a new day of week:\n");
+		String day = s.next();
+	}
+	
+	public void EvaluateDayOfTheWeek(String dayofweek){
+		if (dayofweek != null){
+			System.out.println("You didnt put in anything");
+		}
+		
+	}
+
+}
