@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class DayOfWeek {
+
+	public static void main(String[] args) {
+		Scanner a = new Scanner(System.in);
+		System.out.println("Enter a new day of week or Quit to exit:\n");
+		String day = null;
+		day = a.nextLine();
+
+		EvaluateDayOfWeek(day);
+	}
+
+	public static void EvaluateDayOfWeek(String day) {
+		if (!day.equals("Quit")){
+		if (!day.isEmpty()) {
+
+			if (day.equals("Monday") || (day.equals("Tuesday"))
+					|| (day.equals("Wednesday")) || (day.equals("Thursday"))
+					|| (day.equals("Friday"))) {
+				System.out.println("You have to go to work. ");
+			} else if (day.equals("Saturday") || (day.equals("Sunday"))) {
+				System.out.println("Take the Day off");
+			} else {
+				System.out.println("That is not a valid day");
+			}
+		}
+
+		else {
+			System.out.println("You didnt enter anything please try again.");
+		}
+	}
+		else {
+			System.out.println("Enter another day:\n");
+		}
+	}
+}
