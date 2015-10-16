@@ -1,0 +1,15 @@
+
+public class Chapter2 {
+
+	public static void main(String[] args) {
+
+
+		//chars can be incremented
+		char ch = 'a';
+		for(ch = 'a'; ch != 'z'; ch++){
+			System.out.println("ch is now " + ch);
+		}
+		
+	}
+
+}
